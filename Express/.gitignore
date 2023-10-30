@@ -1,1 +1,94 @@
-./node_modules
+# Ignore compiled files
+*.class
+*.jar
+*.war
+*.ear
+*.so
+*.dll
+*.exe
+
+# Ignore package files
+*.tar
+*.gz
+*.bz2
+*.zip
+*.rar
+
+# Ignore IDE files
+.idea/
+.vscode/
+.project
+.classpath
+
+# Ignore system and hidden files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore logs and temporary files
+*.log
+*.log.*
+*.tmp
+*.swp
+*.bak
+*.sql
+
+# Ignore node_modules directory (for Node.js projects)
+node_modules/
+
+# Ignore virtual environment directory (for Python projects)
+venv/
+__pycache__/
+
+# Ignore compiled and generated code
+/target/
+/build/
+/dist/
+/out/
+/bin/
+/obj/
+
+# Ignore dependencies (specific to your project)
+# For example, if you are using npm:
+# /node_modules/
+
+# Ignore configuration files
+# For example, if you are using Docker:
+# .dockerignore
+
+# Ignore sensitive or environment-specific files
+# For example, if you have a .env file with secrets:
+# .env
+
+# Ignore package-lock.json or yarn.lock (Node.js)
+# package-lock.json
+# yarn.lock
+
+# Ignore user-specific files
+# For example, if you have a global .gitconfig file:
+# ~/.gitconfig
+
+# Ignore local settings for tools
+# For example, Visual Studio Code settings
+# .vscode/settings.json
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore database files
+*.db
+
+# Ignore macOS Finder information files
+.AppleDouble/
+._*
+
+# Ignore crash reports (Windows)
+AppData/
+
+# Ignore auto-generated documentation
+doc/
+
+# Ignore backup files
+*.swp
+*~
+\#*
