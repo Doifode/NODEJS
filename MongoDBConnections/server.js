@@ -51,13 +51,25 @@ app.patch('/userUpdate/:id', async (req, res) => {
 app.delete('/deleteUser/:id', async (req, res) => {
     try {
         const _id = req.params.id;
-        const deletedata = await user.findByIdAndDelete({ _id });
-        res.send(deletedata);
+        const deleteData = await user.findByIdAndDelete({ _id });
+        res.send(deleteData);
     } catch (error) {
         res.status(500).send(error)
 
     }
 })
+
+app.post('/userLogin', async (req, res) => {
+    try {
+        const getEmail = req.body.email;
+        const checkEmail = await user.findOne({ email: getEmail });
+        res.send(checkEmail)
+    } catch (error) {
+        res.status(500).send(error)
+
+    }
+})
+
 app.listen(2304, () => {
     console.log('hi its working on  2304 !')
 })

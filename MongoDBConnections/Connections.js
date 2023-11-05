@@ -8,8 +8,26 @@ mongodb://127.0.0.1:27017/YOUR_DATABASE_NAME
 */
 
 const schema = new mongoose.Schema({
-    name: String,
-    password: String
+    name: {
+        type: String,
+        required: true
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    phone: {
+        type: Number,
+        unique:true
+     },
+    confirmPassword: {
+        type: String,
+        required: true
+    },
 });
 /*
 Here you  can  define the value fields of that collection
