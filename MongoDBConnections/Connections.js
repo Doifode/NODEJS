@@ -23,11 +23,7 @@ const schema = new mongoose.Schema({
     phone: {
         type: Number,
         unique:true
-     },
-    confirmPassword: {
-        type: String,
-        required: true
-    },
+     }
 });
 /*
 Here you  can  define the value fields of that collection
