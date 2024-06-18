@@ -1,0 +1,22 @@
+* Differences Between Node.js and Browsers
+
+- Both the browser and node.js uses JavaScript as their programming language. Building apps that run in the browser is completely different from building a Node.js application. Despite the fact that it's always javascript there are some differences that make experience radically different.
+
+1. Browser Side 
+- Browser side most of the time we are interacting with the Document or Window's API's like cookies.
+1. Nodejs Side
+- Node js side there is no API's like Document and Window's and all the other objects that are provided by the browser.
+- And in the browser, we don't have all the nice APIs that Node.js provides through its modules, like the filesystem access functionality.
+
+2. Browser Side 
+- In Browser side you don't get the luxury to choose that what browser your user's will use, this is very convenient.
+
+2. Nodejs Side
+- In nodejs you can control the environment Unless you are building the open source application that anyone can deploy.
+- This means that you can write all the ES2015 + Javascript that your nodejs version can support.
+
+3. Browser Side 
+- In browser side since nodejs v12 we can only use the ES-Module system to import.
+
+3. Nodejs Side.
+- In nodejs we can use both the commonjs and ES-Module system both it means required() and import both can work.

@@ -1,0 +1,19 @@
+* V8 JavaScript Engine
+
+- V8 is the name of the JavaScript engine that powers Google Chrome. It's the thing that takes our JavaScript and executes it while browsing with Chrome.
+- V8 is the JavaScript engine i.e. it parses and executes JavaScript code. The DOM, and the other Web Platform APIs (they all makeup runtime environment) are provided by the browser.
+- The cool thing is that the JavaScript engine is independent of the browser in which it's hosted. This key feature enabled the rise of Node.js. V8 was chosen to be the engine that powered Node.js back in 2009, and as the popularity of Node.js exploded, V8 became the engine that now powers an incredible amount of server-side code written in JavaScript.
+
+The Quest of performance 
+
+- V8 is written in C++, and it's continuously improved. It is portable and runs on Mac, Windows, Linux and several other systems.
+
+What is V8?
+
+V8 is the JavaScript engine that powers Google Chrome. It parses and executes JavaScript code, which means it takes the code you write and runs it. However, it doesn't handle everything related to web browsing; the Document Object Model (DOM) and other Web Platform APIs, which are necessary for interacting with web pages, are provided by the browser itself.
+
+Independence from Browsers
+One of the standout features of V8 is its independence from the browser. This allowed V8 to be used outside of the browser environment, leading to the creation of Node.js in 2009. Node.js uses V8 to execute JavaScript on the server side, enabling the development of server-side applications with JavaScript. This has significantly expanded the reach and usage of JavaScript beyond just web browsers.
+
+V8 and Node.js
+The rise of Node.js, powered by V8, has led to a vast ecosystem where JavaScript is used extensively for server-side development. This versatility has also extended to desktop applications through frameworks like Electron, which allow the creation of cross-platform desktop apps using web technologies.

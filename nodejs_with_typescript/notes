@@ -1,0 +1,18 @@
+1. First thing to do is to install TypeScript in our project:
+npm i -D typescript
+this command only compiles the ts into js.
+npx tsc example.ts
+now you need to run compiled js file.
+node example.js
+
+
+You can use ts-node to run TypeScript code directly in Node.js without the need to compile it first. But it's not typechecking your code. So we recommend to type check your code first with tsc and then run it with ts-node before shipping it.
+
+To use ts-node, you need to install it first:
+npm i -D ts-node
+to run the file
+npx ts-node example.ts
+
+
+If you want to use tsx via node, you can register tsx via --import:
+node --import=tsx example.ts
