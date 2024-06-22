@@ -1,0 +1,22 @@
+TIMERS 
+
+setTimeout()
+When writing JavaScript code, you might want to delay the execution of a function.
+
+This is the job of setTimeout. You specify a callback function to execute later, and a value expressing how later you want it to run, in milliseconds:
+
+setTimeout(() => {
+  // runs after 2 seconds
+}, 2000);
+setTimeout(() => {
+  // runs after 50 milliseconds
+}, 50);
+
+
+setTimeout returns the timer id. This is generally not used, but you can store this id, and clear it if you want to delete this scheduled function execution:
+const id = setTimeout(() => {
+  // should run after 2 seconds
+}, 2000);
+
+// I changed my mind
+clearTimeout(id);

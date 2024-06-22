@@ -1,0 +1,17 @@
+Working with file descriptors in Node.js
+Before you're able to interact with a file that sits in your filesystem, you must get a file descriptor.
+
+A file descriptor is a reference to an open file, a number (fd) returned by opening the file using the open() method offered by the fs module. This number (fd) uniquely identifies an open file in operating system:
+
+Notice the r we used as the second parameter to the fs.open() call.
+
+That flag means we open the file for reading.
+
+Other flags you'll commonly use are:
+
+Flag	Description	File gets created if it doesn't exist
+r+	This flag opens the file for reading and writing	❌
+w+	This flag opens the file for reading and writing and it also positions the stream at the beginning of the file	✅
+a	This flag opens the file for writing and it also positions the stream at the end of the file	✅
+a+	This flag opens the file for reading and writing and it also positions the stream at the end of the file	✅
+You can also open the file by using the fs.openSync method, which returns the file descriptor, instead of providing it in a callback:
