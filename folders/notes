@@ -1,0 +1,19 @@
+Working with folders in Node.js
+The Node.js fs core module provides many handy methods you can use to work with folders.
+Check if a folder exists
+Use fs.access() (and its promise-based fsPromises.access() counterpart) to check if the folder exists and Node.js can access it with its permissions.
+
+Create a new folder
+Use fs.mkdir() or fs.mkdirSync() or fsPromises.mkdir() to create a new folder.
+
+const fs = require('node:fs');
+
+const folderName = '/Users/joe/test';
+
+try {
+  if (!fs.existsSync(folderName)) {
+    fs.mkdirSync(folderName);
+  }
+} catch (err) {
+  console.error(err);
+}

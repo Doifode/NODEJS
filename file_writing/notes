@@ -1,0 +1,50 @@
+WRITING FILE WITH NODE.JS
+
+Easiest way to write file in node.js is using fs module and use the fs.writeFile();
+
+const fs = require('node:fs');
+
+const content = 'Some content!';
+
+fs.writeFile('/Users/joe/test.txt', content, err => {
+  if (err) {
+    console.error(err);
+  } else {
+    // file written successfully
+  }
+});
+
+
+//////////
+Writing a file synchronously
+Alternatively, you can use the synchronous version fs.writeFileSync():
+
+const fs = require('node:fs');
+const content = 'Some content!';
+try {
+  fs.writeFileSync('/Users/joe/test.txt', content);
+  // file written successfully
+} catch (err) {
+  console.error(err);
+}
+
+
+
+Appending content to a file
+Appending to files is handy when you don't want to overwrite a file with new content, but rather add to it.
+
+Examples
+A handy method to append content to the end of a file is fs.appendFile() (and its fs.appendFileSync() counterpart):
+
+const fs = require('node:fs');
+
+const content = 'Some content!';
+
+fs.appendFile('file.log', content, err => {
+  if (err) {
+    console.error(err);
+  } else {
+    // done!
+  }
+});
+
